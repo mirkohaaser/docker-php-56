@@ -25,3 +25,6 @@ RUN docker-php-ext-install mcrypt
 RUN apt-get update 
 RUN apt-get install -y libbz2-dev zlib1g-dev 
 RUN docker-php-ext-install zip bz2
+
+# Install xdebug
+RUN yes | pecl install xdebug
